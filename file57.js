@@ -38,3 +38,4 @@ hello.prototype.sing = function(){
 console.log(hello.prototype.sing());
 
 // proto is property of object and it is a reference to an object
+

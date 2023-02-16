@@ -40,7 +40,9 @@ console.log(obj3.__proto__); // prints { key1: 'value1', key2: 'value2' }
 
 // [[prototype]] is a property of an object
 
+// __proto__ is a reference while prototype is an object of function
 
+// proto is a reference to the chain being created
 
 const userMethods = {
     about: function(){
@@ -63,6 +65,26 @@ function createUser(firstName, lastName, email, age, address){
     user.address = address;
     return user;
 }
+
+/*
+
+The line const user = Object.create(userMethods); creates a new object user and sets its prototype to the userMethods object.
+
+The Object.create() method creates a new object and sets its prototype to the object passed as an argument. In this case, 
+we're passing the userMethods object as the argument, so the user object will inherit all the properties and methods 
+defined on the userMethods object.
+
+By setting the user object's prototype to userMethods, we're creating a "prototype chain". This means that when we call a 
+method on the user object, JavaScript first looks for the method on the user object itself. If the method isn't found, 
+JavaScript looks for the method on the user object's prototype (userMethods). If the method still isn't found, 
+JavaScript continues up the prototype chain until it reaches the Object.prototype object, which is the default prototype 
+for all objects in JavaScript.
+
+In this example, we're using the Object.create() method to create a new user object with its prototype set to userMethods. 
+This means that the user object will inherit the about(), is18(), and sing() methods defined on userMethods, and we can 
+call these methods on the user object as if they were defined directly on the user object itself.
+
+*/
 
 const user4 = createUser("Liton", "Miah", "liton22@yahoo.com", 29, "Mirpur, Dhaka");
 const user5 =  createUser("Miron", "Manna", "miron@gmail.com", 44, "Dhanmondi, Dhaka");
