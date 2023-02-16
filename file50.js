@@ -7,6 +7,8 @@ const user1 = {
     }
 }
 
+user1.about(); // returns Shammunul 37
+
 // don't do the following mistake
 
 const myFunc = user1.about; // this is not bounded yet
