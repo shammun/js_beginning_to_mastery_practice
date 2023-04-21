@@ -12,6 +12,8 @@ if(firstName[0] === "J" && weight > 50 && height > 1.8){
     console.log("You are not eligible to play");
 }
 
+// You are not eligible to play
+
 
 // ternary operator
 let firstName2 = "John";
@@ -19,7 +21,7 @@ let weight2 = 62;
 let height2 = 1.8;
 
 let message = firstName2[0] === "J" || weight2 > 50 || height2 > 1.8 ? "You are eligible to play" : "You are not eligible to play";
-console.log(message);
+console.log(message); // You are eligible to play
 
 // switch statement
 let firstName3 = "John";
@@ -40,11 +42,16 @@ switch(firstName3[0]){
         console.log("You are not eligible to play");
 }
 
+// You are eligible to play
+
+
 // switch statement -- again
+// switch statement -- multiple cases together
 let firstName4 = "John";
 let weight4 = 62;
 let height4 = 1.8;
 
+// groups multiple cases together
 switch(firstName4[0]){
     case "J":
     case "A":

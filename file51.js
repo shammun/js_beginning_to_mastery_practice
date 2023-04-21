@@ -32,12 +32,12 @@ const user1  = {
 }
 
 // here this value is window object
-user1.about(); // returns undefined undefined
+user1.about(); // returns window followed by undefined undefined
 
 // For arrow function, even if we use call method, it will not work
-user1.about.call(user1);
+user1.about.call(user1); // returns window followed by undefined undefined
 
-user1.about(user1); // returns the same as before
+user1.about(user1); // returns window followed by undefined undefined
 
 
 

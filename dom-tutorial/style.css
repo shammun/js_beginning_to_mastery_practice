@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    position: relative;
+    min-height: 60vh;
+    background: url('./background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+.nav {
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-items {
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  .headline {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    transform: translate(-50%, -50%);" is used to move 
+    an element (typically used for centering an element) 
+    to the center of its parent container both vertically 
+    and horizontally.
+
+    "transform: translate(-50%, -50%);" moves an element to 
+    the center of its parent container by moving it 50% of 
+    its own size to the left and 50% of its own size up. This 
+    technique is often used for centering elements vertically 
+    and horizontally in responsive web design, where the size 
+    of the container may change dynamically.
+    */
+  }
+
+  .btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-headline {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem; 
+    font-weight: 600;
+    /*
+    "padding: 1rem 2rem;" sets the amount of space between the content and the 
+    border of the "btn-headline" element. The "1rem" value specifies the top and 
+    bottom padding, while the "2rem" value specifies the left and right padding.
+
+    "font-size: 1rem;" sets the size of the text inside the "btn-headline" element 
+    to 1 rem. The "rem" unit is relative to the font-size of the root element 
+    (usually the <html> element).
+
+    "margin-top: 1rem;" sets the amount of space between the top edge of the 
+    "btn-headline" element and the preceding element(s). The "1rem" value specifies 
+    the amount of margin.
+
+     margin refers to the space outside the border of an element. It is used to add 
+     space between elements, and affects the position of the element in relation to 
+     other elements on the page. When you apply margin-top to an element, it creates
+     space above the element and pushes it down, which affects the layout of the page.
+
+     the main difference between top and bottom padding vs margin-top is that padding 
+     affects the space inside the element, while margin affects the space outside the 
+     element and the position of the element in relation to other elements on the page.
+    
+    "font-weight": In CSS, the "font-weight" property is used to set the weight 
+    (or thickness) of the font. A font's weight is typically expressed as a numerical 
+    value ranging from 100 to 900, with certain values (e.g. 100, 400, 700) having 
+    specific names (e.g. "thin", "normal", "bold").
+
+    A "font-weight" value of 500 means that the font is in the middle of the normal 
+    range, which is typically equivalent to "medium" or "semi-bold". It is thicker 
+    than "normal" (400) but lighter than "bold" (700). Some fonts may have additional 
+    weight values (e.g. 600, 800) that fall between these ranges.
+     */
+  }
+
+  .section-todo {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .bg-dark {
+    background: #000;
+    color: #eee;
+ }
+
+  .form-todo {
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  } 
+
+  .form-todo input {
+    min-height: 100%;
+  }
+
+  .form-todo input[type="text"] {
+    width: 68%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .form-todo input[type="submit"] {
+    width: 20%;
+    background: rgb(44, 55, 63);
+    color: white;
+    font-weight: bold;
+  }
+
+  .todo-list {
+    text-align: left;
+    font-size:  1.2rem;
+    list-style-type: none;
+  }
+
+  .todo-list li {
+    padding: 0.7rem;
+    background: #444;
+    color: cyan;
+    margin-top: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section-signup {
+    /*
+    The auto value for the left and right margins centers the element horizontally 
+    within its containing block.
+
+    So, margin: 5rem auto; centers an element horizontally and sets a large top and 
+    bottom margin of 5 rems each.
+    */
+    margin: 5rem auto;
+    text-align: center;
+    background: rgb(235, 232, 232);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .signup-form {
+    max-width: 800px;
+    width: 95%;
+    text-align: left;
+    margin: auto;
+  }
+
+  .signup-form label {
+    display: block;
+  }
+
+  .signup-form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .form-group {
+    margin-top: 1rem;
+  }
+
+  .signup-form textarea {
+    width: 100%;
+  }
+   
+  .signup-btn {
+    background: rgb(44, 55, 63);
+    color: white;
+    padding: 1rem 2rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+  }

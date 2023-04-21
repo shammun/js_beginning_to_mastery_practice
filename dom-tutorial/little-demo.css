@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+Using * as the selector means that this CSS rule 
+applies to all elements on the page. 
+
+box-sizing: border-box; sets the box-sizing 
+property to border-box, which means that the 
+padding and border of an element will be included 
+in its total width and height.
+*/
+
+body {
+    font-family: arial, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+This CSS code is used to style the main element of an HTML document.
+
+min-height: 100vh; sets the minimum height of the main element to 100 viewport height units (vh). This ensures that the main element will always take up at least the full height of the viewport.
+
+display: flex; sets the display property of the main element to flex, which enables flexbox layout. Flexbox is a powerful layout tool that makes it easier to align and distribute content within a container.
+
+justify-content: center; centers the flex items (i.e., the content of the main element) horizontally within the container by setting the justify-content property to center. This means that the content will be evenly distributed along the horizontal axis, with equal space on either side.
+
+align-items: center; centers the flex items vertically within the container by setting the align-items property to center. This means that the content will be evenly distributed along the vertical axis, with equal space above and below.
+
+text-align: center; centers the text content of the main element by setting the text-align property to center. This means that any text within the main element will be horizontally centered.
+*/
+
+h1{
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #efefef;
+    border-radius: 1rem;
+}
+
+/*
+This CSS code is used to style h1 elements in an HTML document.
+
+padding: 1rem 2rem; sets the padding of the h1 element to 1 rem (which is equal to the font-size of the element) on the top and bottom, and 2 rem on the left and right sides. This creates a space between the content and the border of the element, and ensures that the text has some breathing room.
+
+background-color: #333; sets the background color of the h1 element to a dark gray color with a hex code of #333.
+
+color: #efefef; sets the text color of the h1 element to a light gray color with a hex code of #efefef. This creates a high contrast between the background and text, making the text more readable.
+
+border-radius: 1rem; sets the border radius of the h1 element to 1 rem. This rounds the corners of the element, giving it a softer, more modern appearance.
+
+Overall, this code creates a simple yet visually appealing style for h1 elements, with a dark gray background, light gray text, and rounded corners. The padding ensures that the text is not too close to the edge of the element, and the high contrast between the text and background makes the text easy to read.
+*/
+
+button{
+    padding: 1rem 2rem;
+    font-size:1.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    transition: background 0.4s;
+}
+
+/*
+cursor: pointer; changes the cursor to a pointer when the mouse hovers over the button element, indicating that it can be clicked.
+
+outline: none; removes the outline around the button element when it is clicked.
+
+transition: background 0.4s; sets a transition effect when the background color of the button element changes. This creates a smooth animation when the button is hovered over or clicked.
+*/
+
+button:hover{
+    background: rgb(214, 214, 214);
+}

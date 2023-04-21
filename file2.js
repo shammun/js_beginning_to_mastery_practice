@@ -13,5 +13,6 @@ let string4 = "20";
 let addedString = string3 + string4;
 console.log(addedString);
 
+// converts string to number and then adds
 let addedNumber = +string3 + +string4; // +string3 converts string to number
 console.log(addedNumber); 

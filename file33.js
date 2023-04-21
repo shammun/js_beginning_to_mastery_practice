@@ -26,7 +26,7 @@ numbers.forEach(function(number, index){
 
 // define callback function inside the forEach method -- another example
 numbers.forEach(function(number, index){
-    console.log(`${number}*10 = ${number*2}`);
+    console.log(`${number}*10 = ${number*10}`);
 })
 
 // forEach with array of objects

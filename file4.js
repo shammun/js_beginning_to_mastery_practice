@@ -1,12 +1,12 @@
 let firstName;
-console.log(typeof firstName);
+console.log(typeof firstName); // prints undefined
 firstName = "John";
 console.log(typeof firstName, firstName);
 
 let myVariable = null;
-console.log(myVariable);
+console.log(myVariable); // prints null
 myVariable = "ss";
-console.log(myVariable, typeof myVariable);
+console.log(myVariable, typeof myVariable); // ss string
 console.log(typeof null); // this is bug or error as it shows object
 
 // BigInt
@@ -23,11 +23,9 @@ console.log(Number.MIN_SAFE_INTEGER);
 
 // BigInt -- again
 let number2 = 123n;
-console.log(number2, typeof number2);
+console.log(number2, typeof number2); // 123n bigint
 
-console.log(number + number2);
+console.log(number + number2); // 123579n
 
-// We can't add BigInt with normal number
-// console.log(number + 123);
 
 

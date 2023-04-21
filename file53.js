@@ -7,7 +7,7 @@ const user = {
     lastName: "Islam",
     email: "sha_is113@yahoo.com",
     age: 37,
-    address: "House 45/10, Jalalabad R/A, Sylhet, Bangladesh",
+    address: "House 40/10, ABCD R/A, Sylhet, Bangladesh",
     about: function(){
         return `${this.firstName} is ${this.age} years old`;
     },
@@ -39,7 +39,7 @@ function createUser(firstName, lastName, email, age, address){
 
 const user1 = createUser("Shammunul", "Islam", "sha_is13@yahoo.com", 37, "Jalalaba R/A");
 console.log(user1);
-const  is18 = user1.is18();
+const is18 = user1.is18();
 console.log(is18);
 
 const about = user1.about();

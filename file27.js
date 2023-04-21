@@ -8,8 +8,8 @@ function myApp(){
     };
     const myFunc2 = function(){};
     const myFunc3 = () => {};
-    console.log(myVar);
-    myFunc();
+    console.log(myVar); // prints "value1"
+    myFunc(); // prints "value 60"
 }
 
 myApp();
@@ -18,9 +18,9 @@ myApp();
 const myVar = "value 1";
 
 function myApp2(){
-    
     function myFunc(){
-        console.log("inside myFunc", myVar); // the value of myVar will be "value 1"
+        // the value of myVar will be "value 1"
+        console.log("inside myFunc", myVar); 
     };
     const myFunc2 = function(){};
     const myFunc3 = () => {};
